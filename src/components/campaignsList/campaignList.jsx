@@ -10,6 +10,7 @@ import { StartDatePicker } from '../sharedComponents/startDatePicker'
 import { EndDatePicker } from '../sharedComponents/endDatePicker'
 import { withApp } from '../../initApp'
 import { CampainsDetailList } from '../sharedComponents/detailListComponent';
+import { columns } from '../../constants'
 
 const row = {
     'width': '100%',
@@ -55,7 +56,7 @@ export const CampaignListContainer = (props) => {
                         <TextField label="Filter by name:"
                             onChange={(e) => onFilterChange(e.target.value)} /></div>
                 </div>
-                <CampainsDetailList {...props} />
+                <CampainsDetailList columns={columns} {...props} />
             </div>
             :
             <div style={{ marginTop: '230px' }}>
