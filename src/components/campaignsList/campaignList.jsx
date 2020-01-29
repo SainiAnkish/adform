@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { shape, array, bool } from 'prop-types';
-import { DetailsList, DetailsListLayoutMode, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList';
 import { Spinner, SpinnerSize } from 'office-ui-fabric-react/lib/Spinner';
-import { fetchcampaignData } from './actionsCampainList/fetchCampaign'
-import { onFilterChange, addCampaign, onStartDateChange, onEndDateChange } from './actionsCampainList/actions'
-import * as moment from 'moment';
+import { fetchcampaignData } from './thunks/campainListThunk'
+import { onFilterChange, addCampaign, onStartDateChange, onEndDateChange } from './actionsCampainList/actions';
 import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { StartDatePicker } from '../sharedComponents/startDatePicker'
 import { EndDatePicker } from '../sharedComponents/endDatePicker'

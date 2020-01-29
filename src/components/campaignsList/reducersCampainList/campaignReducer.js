@@ -7,7 +7,7 @@ import {
     ADD_CAMPAIGNS_ACTION
 } from '../../../constants';
 import * as moment from 'moment';
-import { mapUserDataToCampaign } from '../actionsCampainList/fetchCampaign'
+import { mapUserDataToCampaign } from '../../helperFunctions/util'
 
 const initialState = {
     campaigns: [],
