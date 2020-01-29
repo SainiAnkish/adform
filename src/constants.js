@@ -8,6 +8,23 @@ export const ADD_CAMPAIGNS_ACTION = 'ADD_CAMPAIGNS_ACTION';
 export const START_DATE_CHANGE_ACTION = 'START_DATE_CHANGE_ACTION';
 export const END_DATE_CHANGE_ACTION = 'END_DATE_CHANGE_ACTION';
 
+export const DayPickerStrings = {
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+
+    shortMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+
+    shortDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+
+    goToToday: 'Go to today',
+    prevMonthAriaLabel: 'Go to previous month',
+    nextMonthAriaLabel: 'Go to next month',
+    prevYearAriaLabel: 'Go to previous year',
+    nextYearAriaLabel: 'Go to next year',
+    closeButtonAriaLabel: 'Close date picker'
+};
+
 export const campainsData =
     [{ "id": 1, "name": "Divavu", "startDate": "9/19/2020", "endDate": "3/9/2021", "Budget": 88377, "userId": 3 },
     { "id": 2, "name": "Jaxspan", "startDate": "11/21/2017", "endDate": "2/21/2018", "Budget": 608715, "userId": 16 },
